@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Meu primeiro desafio com JS</h1>
+    <P>Esse é um texto da minha página desafio </P>
+
+</body>
+<script>
+    let listcolors = ["yellow", "blue", "red", "green", "pink"]
+    document.body.style.backgroundColor = listcolors[3];
+
+    function ColorChange() {
+        document.body.style.backgroundColor = listcolors[Math.floor(5*Math.random())];
+    }
+
+    setInterval(ColorChange, 1000)
+    
+</script>
+</html>
